@@ -16,13 +16,13 @@ do
 
 touch /etc/sysconfig/network-scripts/ifcfg-eth0:$i
 
-# YOU MUST ADD YOUR FIRST, SECOND AND THIRD OCTECTS OF YOUR /24 BELOW AND THE FULL GATEWAY.
+# YOU MUST ADD YOUR FIRST, SECOND AND THIRD OCTECTS OF YOUR /24 REPLACING xxx.yyy.zzz WITH THE CORRECT VALUE.   YOU MUST ALSO REPLACE aaa.bbb.ccc.ddd WITH THE FULL GATEWAY.
 
 echo "DEVICE=eth0:$i
 BOOTPROTO=static
 ONBOOT=yes
 IPADDR=xxx.yyy.zzz.$i
-GATEWAY=xxx.yyy.zzz.aaa
+GATEWAY=aaa.bbb.ccc.ddd
 NETMASK=255.255.255.0" > /etc/sysconfig/network-scripts/ifcfg-eth0:$i
 
 done
