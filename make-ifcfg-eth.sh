@@ -8,7 +8,7 @@
 
 # You can also replace the 1 (in i=1)  with the starting fourth octect for the sequence. The i variable (number 1 in this case) is the starting point for the sequence.
 
-# YOU MUST REPLACE THHE ### IN THIS SECTION WITH THE HIGHEST /24 FOURTH OCTET OF THE IP RANGE
+# 1. YOU MUST REPLACE THHE ### IN THIS SECTION WITH THE HIGHEST /24 FOURTH OCTET OF THE IP RANGE
 
 for ((i=1;i<=###;i++))
 
@@ -16,7 +16,8 @@ do
 
 touch /etc/sysconfig/network-scripts/ifcfg-eth0:$i
 
-# YOU MUST ADD YOUR FIRST, SECOND AND THIRD OCTECTS OF YOUR /24 REPLACING xxx.yyy.zzz WITH THE CORRECT VALUE.   YOU MUST ALSO REPLACE aaa.bbb.ccc.ddd WITH THE FULL GATEWAY.
+# 2. YOU MUST ADD YOUR FIRST, SECOND AND THIRD OCTECTS OF YOUR /24 REPLACING xxx.yyy.zzz WITH THE CORRECT VALUES.
+# 3. YOU MUST ALSO REPLACE aaa.bbb.ccc.ddd WITH THE FULL GATEWAY.
 
 echo "DEVICE=eth0:$i
 BOOTPROTO=static
