@@ -8,7 +8,7 @@
 
 # You can also replace the 1 (in i=1)  with the starting fourth octect for the sequence. The i variable (number 1 in this case) is the starting point for the sequence.
 
-# You MUST replace the ### in this section below with the highest /24 fourth octect to create in the sequence.  
+# YOU MUST REPLACE THHE ### IN THIS SECTION WITH THE HIGHEST /24 FOURTH OCTET OF THE IP RANGE
 
 for ((i=1;i<=###;i++))
 
